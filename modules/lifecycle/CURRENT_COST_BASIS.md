@@ -1,0 +1,1 @@
+Latest recalculation: optimized_storage/README.md and optimize.py; task-based maintenance and independently optimized battery capacities with gridbackup. Replaces price-proportional routineOM in the new experiment. Original fixed10.24kWh manuscript comparison retained for provenance; manuscript not overwritten during this recalculation turn.

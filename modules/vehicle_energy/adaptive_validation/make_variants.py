@@ -1,0 +1,16 @@
+from pathlib import Path
+p=Path(__file__).resolve().parent
+s=(p/'adaptive.c').read_text()
+s=s.replace('offset,amp;}','offset,amp,travel,stopratio;}')
+s=s.replace('double fs=ks*z+cs*zd;', 'double excess=fmax(0,fabs(z)-m->travel);\n  double fs=ks*z+cs*zd+(m->travel>0?copysign(ks*m->stopratio*excess,z):0);')
+s=s.replace('e[8]=m->h-y[14];e[9]=m->h-y[15];', 'e[8]=m->h-y[14];e[9]=m->h-y[15];\n for(int v=0;v<2;v++)for(int j=0;j<4;j++){const double*s=y+20*v;\n  double z=s[0]+a[j]*s[1]+b[j]*s[2]-s[3+j];e[10+4*v+j]=m->travel>0?m->travel-fabs(z):1;}')
+s=s.replace('en+=.5*(60*sc', 'if(m->travel>0){double ex=fmax(0,fabs(z)-m->travel);en+=.5*ks*m->stopratio*ex*ex;}\n  en+=.5*(60*sc')
+s=s.replace('double rtol,double maxdt,double *out)', 'double rtol,double maxdt,double travel,double stopratio,double *out)')
+s=s.replace('offset,amp};','offset,amp,travel,stopratio};')
+s=s.replace('e0[10],e1[10],tmp[NV],ee[10]', 'e0[18],e1[18],tmp[NV],ee[18]')
+s=s.replace('j<10;j++','j<18;j++')
+s=s.replace('(j<8)?','(j<8||j>=10)?')
+s=s.replace('long accept=0','double travelpeak=0;\n long accept=0')
+s=s.replace('for(int j=0;j<4;j++)peakf=fmax(peakf,f[j]);', 'for(int j=0;j<4;j++){peakf=fmax(peakf,f[j]);\n  travelpeak=fmax(travelpeak,fabs(y[0]+a[j]*y[1]+b[j]*y[2]-y[3+j]));}')
+s=s.replace('out[14]=y[16];','out[16]=travelpeak;out[14]=y[16];')
+(p/'variant.c').write_text(s)

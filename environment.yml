@@ -1,0 +1,9 @@
+name: road-vibration
+channels: [conda-forge]
+dependencies:
+  - python=3.12
+  - pip
+  - c-compiler
+  - cxx-compiler
+  - pip:
+      - -r requirements.txt

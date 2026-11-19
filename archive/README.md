@@ -1,0 +1,1 @@
+Historical source and supplemental experiment provenance. These files preserve previous path/layout conventions and nightlight-weighted figures. Use scripts/run_pipeline.py for the current full-length primary results. Do not label archived image tables as the updated primary figure.

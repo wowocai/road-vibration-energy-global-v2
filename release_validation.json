@@ -1,0 +1,50 @@
+{
+  "release_date": "2026-11-19",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "stages_successfully_executed": [
+    "quick (fresh passive integration; full-length supply recomputation; vehicle-record aggregation; current wind metrics; coverage preview)",
+    "national (fresh model fitting and 5-fold country holdout, two seeds)",
+    "cost (C++ compilation, cyclic SOC dispatch, independent battery capacity optimization)",
+    "device contact summary from included phase records"
+  ],
+  "not_executed_during_packaging": [
+    "full fresh nonlinear contact ensemble",
+    "full fresh A-H coupled vehicle ensemble",
+    "original global SHP/VIIRS re-extraction",
+    "fresh raw-weather to minute preprocessing"
+  ],
+  "national_max_absolute_TWh_difference_from_approved_reference": 0.0,
+  "national_countries": 218,
+  "CV_predictions": 708,
+  "primary_road_length_km": 6906689.106,
+  "compiler_source_checks": "both C models and C++ dispatcher passed syntax checks",
+  "core_checks": {
+    "status": "passed",
+    "checks": [
+      "full-length headline percentages",
+      "24 ISO/stroke vehicle scenarios",
+      "positive ensemble-mean additional wheel work",
+      "current Savonius wind annual energy",
+      "passive vehicle matrix and refinement (separate file)"
+    ]
+  },
+  "cost_USD_km": {
+    "PV": 22482.160380468576,
+    "vibration": 34122.80191373323,
+    "wind": 34465.57612178899
+  },
+  "storage_kWh_km": {
+    "PV": 10.24,
+    "vibration": 0.0,
+    "wind": 0.0
+  },
+  "dependencies": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "matplotlib": "3.10.8",
+    "Pillow": "13.0.0"
+  }
+}

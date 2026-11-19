@@ -1,11 +1,12 @@
-# Upload-ready layout
+# Published code and data
 
-## GitHub
-Extract GitHub_code.zip into the repository working tree. It contains source, documentation and environment files. Do not commit the large data archive into normal Git history. The .gitignore excludes large generated inputs and outputs.
+Code repository: https://github.com/wowocai/road-vibration-energy-global-v2.
 
-## Zenodo
-Upload Zenodo_data.zip together with the code-release archive (or link the corresponding GitHub release using Zenodo's GitHub integration). The two archives share the same root folder and are designed to merge after extraction. SHA256SUMS.txt records the combined release tree. Optionally use the all-in-one archive as a single review download.
+Data record: https://zenodo.org/records/24359475. Version DOI: https://doi.org/10.5281/zenodo.24359475.
 
-Fill in the verified paper title, authors, affiliations, version, license and related identifiers in Zenodo. No author list or DOI is invented in this preparation. After publishing, insert the actual Zenodo record URL/DOI in the GitHub README and manuscript Data/Code availability statements, and link the repository release back to that record. The GitHub URL supplied by the author could not be fetched in this session, so existing remote contents were not merged or overwritten.
+Download Road_Vibration_Energy_Global_data.zip from the data record. It contains the internal root road-vibration-energy-global/. Merge the contents of that directory with this code checkout before running scripts/run_pipeline.py. The matching code and data archives also share that internal root and can be extracted into the same parent directory. Large numerical data are deposited on Zenodo rather than committed to the code repository.
 
-Suggested Chinese availability statement after publication: “代码与处理后数据公开于[仓库URL]及其关联的Zenodo数据记录[实际DOI]，包含环境配置、依赖版本和脚本级工作流程说明。”
+The deposit includes README_ZENODO_DATA.md, EXTERNAL_PUBLIC_DATA_URLS.md and FILE_MANIFEST.csv. The same data guides are available at the repository root. Environment configuration and input–script–output mappings are documented in INSTALLATION.md and WORKFLOW.md.
+
+Data availability statement: Processed inputs, simulation records and numerical results are available at https://doi.org/10.5281/zenodo.24359475. Analysis code, environment configuration, dependencies and script-level workflow documentation are available at https://github.com/wowocai/road-vibration-energy-global-v2.
+

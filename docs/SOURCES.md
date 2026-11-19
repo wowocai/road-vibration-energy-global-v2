@@ -17,4 +17,5 @@ Sources below accompany the supplied study files; this packaging task did not re
 | Facilities | Five power configurations in modules/supply/power_ladder.json and archived coverage_device_markers.csv; lamp annual179.0114kWh; equipment combinations and duty-cycle assumptions retained explicitly |
 | Costs/storage | Bill of materials and price-source CSV; bulk coefficient.5 with sensitivity; LiTime5.12kWh module source and maintenance accounting references recorded in lifecycle assumptions JSON |
 
-A publicly resolvable Zenodo record URL and DOI must be inserted only after the deposit is published. There is no invented Zenodo link in this package.
+Published data record: https://zenodo.org/records/24359475. Version DOI: https://doi.org/10.5281/zenodo.24359475. Code repository: https://github.com/wowocai/road-vibration-energy-global-v2.
+

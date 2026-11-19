@@ -17,4 +17,5 @@ quick重新计算逐路段供需、年度发电量、密集阵列、供需阈值
 
 文件级流程、输入输出、单位、参数来源、运行顺序及结果检查见docs文件夹。既有模拟JSON与分钟输入被作为可复算中间数据保存；原始完整SHP、全球VIIRS栅格不在包内，所附压缩道路几何用于显示，统计长度取源属性。
 
-本包用于上传准备，尚未替用户发布GitHub或Zenodo。准确DOI需在实际发布后填入。正文、SI和回复文档不包含在公开代码数据包中；历史绘图源代码位于archive，不能当作当前全路长主图直接使用。
+数据已发布于Zenodo：https://doi.org/10.5281/zenodo.24359475（记录：https://zenodo.org/records/24359475）。代码仓库：https://github.com/wowocai/road-vibration-energy-global-v2。数据记录中的压缩包名为Road_Vibration_Energy_Global_data.zip。将其中road-vibration-energy-global目录的内容与代码合并到同一工作目录后运行。数据说明与第三方来源见README_ZENODO_DATA.md和EXTERNAL_PUBLIC_DATA_URLS.md。论文正文与审稿材料不包含在公开仓库中。
+

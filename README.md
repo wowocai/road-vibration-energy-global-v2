@@ -29,3 +29,7 @@ Processed inputs, simulation records and numerical results are available on Zeno
 
 See [the Zenodo data guide](README_ZENODO_DATA.md) and [external data sources](EXTERNAL_PUBLIC_DATA_URLS.md). The Zenodo deposit specifies CC BY 4.0 for the deposited data; software licensing and third-party terms are described separately in THIRD_PARTY_NOTICES.md.
 
+
+## License
+
+Original analysis code is released under the [MIT License](LICENSE). Third-party data and other materials retain their respective terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
